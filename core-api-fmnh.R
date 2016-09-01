@@ -85,7 +85,7 @@ printed <- print.core_api(resp)
 respdf <- as.matrix(c(list(resp)))
 resp_ext <- c()
 
-for (i in 7:ceiling(resp$content$totalHits/10)) {
+for (i in 2:ceiling(resp$content$totalHits/10)) {
   
   parameters_ext <- paste0(core_path,
                               query, 
